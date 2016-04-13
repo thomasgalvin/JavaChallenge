@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>galvin.interview</groupId>
+        <artifactId>Challenge</artifactId>
+        <version>1.0</version>
+    </parent>
+    <artifactId>LinkedList</artifactId>
+    <name>14 - Linked List</name>
+    
+    <dependencies>
+        <dependency>
+            <groupId>galvin.interview</groupId>
+            <artifactId>TestUtils</artifactId>
+            <version>1.0</version>
+        </dependency>
+        
+        <dependency>
+            <groupId>galvin.interview</groupId>
+            <artifactId>List</artifactId>
+            <version>1.0</version>
+        </dependency>
+    </dependencies>
+</project>

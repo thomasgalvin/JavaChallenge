@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>galvin.interview</groupId>
+        <artifactId>Interview</artifactId>
+        <version>1.0</version>
+    </parent>
+    <groupId>galvin.interview</groupId>
+    <artifactId>Challenge</artifactId>
+    <name>Java Challenge: Questions Master</name>
+    <packaging>pom</packaging>
+    
+    <modules>
+        <module>HelloWorld</module>
+        <module>AtoZ</module>
+        <module>FizzBuzz</module>
+        <module>Sort</module>
+        <module>ArrayMerge</module>
+        <module>CleverArrayMerge</module>
+        <module>Fibb</module>
+        <module>Sums</module>
+        <module>Reverse</module>
+        <module>Factorial</module>
+        <module>Prime</module>
+        <module>Circle</module>
+        
+        <module>ArrayList</module>
+        <module>LinkedList</module>
+        <module>Comparator</module>
+        <module>HashMap</module>
+        <module>PrimeSieve</module>
+        <module>QuickSort</module>
+    </modules>
+</project>
