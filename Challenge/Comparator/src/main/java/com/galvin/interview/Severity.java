@@ -10,7 +10,7 @@ package com.galvin.interview;
  */
 public enum Severity
 {
-    Low,
+    Small,
     Medium,
     Large,
     WorldEnding

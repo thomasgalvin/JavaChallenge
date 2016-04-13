@@ -4,7 +4,7 @@ package com.galvin.interview;
  * Sorting is one of the fundamental tasks in software engineering.
  * 
  * In this test, all you have to do is implement a method that copies and sorts 
- * an array of integers. 
+ * an array of integers. Sort them in natural order, smallest to largest.
  * 
  * You can choose whatever algorithm you want: it can be Bubble Sort, Merge
  * Sort, Quick Sort, or even Bogosort if you feel like burning CPU cycles.

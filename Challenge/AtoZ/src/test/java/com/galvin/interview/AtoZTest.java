@@ -134,6 +134,7 @@ public class AtoZTest
         ".ABCDEFG",
         "?ABCDEFG",
         "/ABCDEFG",
+        "\u0100",
     };
     
     @Test

@@ -13,7 +13,7 @@ public class ComparatorTest
         BugReport worldEnding = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.WorldEnding, Urgency.MustHave );
         BugReport large = new BugReport( "Large bug", "Well this sucks.", Severity.Large, Urgency.MustHave );
         BugReport medium = new BugReport( "Medium bug", "Oh bother.", Severity.Medium, Urgency.MustHave );
-        BugReport low = new BugReport( "Low bug", "Eh.", Severity.Low, Urgency.MustHave );
+        BugReport low = new BugReport( "Low bug", "Eh.", Severity.Small, Urgency.MustHave );
         
         List<BugReport> expected = new ArrayList();
         expected.add( worldEnding );
@@ -34,7 +34,7 @@ public class ComparatorTest
         BugReport worldEnding = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.WorldEnding, Urgency.MustHave );
         BugReport large = new BugReport( "Large bug", "Well this sucks.", Severity.Large, Urgency.MustHave );
         BugReport medium = new BugReport( "Medium bug", "Oh bother.", Severity.Medium, Urgency.MustHave );
-        BugReport low = new BugReport( "Low bug", "Eh.", Severity.Low, Urgency.MustHave );
+        BugReport low = new BugReport( "Low bug", "Eh.", Severity.Small, Urgency.MustHave );
         
         List<BugReport> expected = new ArrayList();
         expected.add( worldEnding );
@@ -64,7 +64,7 @@ public class ComparatorTest
         BugReport worldEnding = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.WorldEnding, Urgency.MustHave );
         BugReport large = new BugReport( "Large bug", "Well this sucks.", Severity.Large, Urgency.MustHave );
         BugReport medium = new BugReport( "Medium bug", "Oh bother.", Severity.Medium, Urgency.MustHave );
-        BugReport low = new BugReport( "Low bug", "Eh.", Severity.Low, Urgency.MustHave );
+        BugReport low = new BugReport( "Low bug", "Eh.", Severity.Small, Urgency.MustHave );
         BugReport nil = new BugReport( "Nil bug", "...", null, Urgency.MustHave );
         
         List<BugReport> expected = new ArrayList();
@@ -143,10 +143,10 @@ public class ComparatorTest
         BugReport mediumShouldHave = new BugReport( "Medium bug", "Oh bother.", Severity.Medium, Urgency.ShouldHave );
         BugReport mediumNiceToHave = new BugReport( "Medium bug", "Oh bother.", Severity.Medium, Urgency.NiceToHave );
         
-        BugReport lowFixNow = new BugReport( "Low bug", "Eh.", Severity.Low, Urgency.fixImmediately );
-        BugReport lowMustHave = new BugReport( "Low bug", "Eh.", Severity.Low, Urgency.MustHave );
-        BugReport lowShouldHave = new BugReport( "Low bug", "Eh.", Severity.Low, Urgency.ShouldHave );
-        BugReport lowNiceToHave = new BugReport( "Low bug", "Eh.", Severity.Low, Urgency.NiceToHave );
+        BugReport lowFixNow = new BugReport( "Low bug", "Eh.", Severity.Small, Urgency.fixImmediately );
+        BugReport lowMustHave = new BugReport( "Low bug", "Eh.", Severity.Small, Urgency.MustHave );
+        BugReport lowShouldHave = new BugReport( "Low bug", "Eh.", Severity.Small, Urgency.ShouldHave );
+        BugReport lowNiceToHave = new BugReport( "Low bug", "Eh.", Severity.Small, Urgency.NiceToHave );
         
         List<BugReport> expected = new ArrayList();
         expected.add( worldEndingFixNow );
@@ -197,11 +197,11 @@ public class ComparatorTest
         BugReport mediumNiceToHave = new BugReport( "Medium bug", "Oh bother.", Severity.Medium, Urgency.NiceToHave );
         BugReport mediumNull = new BugReport( "Medium bug", "Oh bother.", Severity.Medium, null );
         
-        BugReport lowFixNow = new BugReport( "Low bug", "Eh.", Severity.Low, Urgency.fixImmediately );
-        BugReport lowMustHave = new BugReport( "Low bug", "Eh.", Severity.Low, Urgency.MustHave );
-        BugReport lowShouldHave = new BugReport( "Low bug", "Eh.", Severity.Low, Urgency.ShouldHave );
-        BugReport lowNiceToHave = new BugReport( "Low bug", "Eh.", Severity.Low, Urgency.NiceToHave );
-        BugReport lowNull = new BugReport( "Low bug", "Eh.", Severity.Low, null );
+        BugReport lowFixNow = new BugReport( "Low bug", "Eh.", Severity.Small, Urgency.fixImmediately );
+        BugReport lowMustHave = new BugReport( "Low bug", "Eh.", Severity.Small, Urgency.MustHave );
+        BugReport lowShouldHave = new BugReport( "Low bug", "Eh.", Severity.Small, Urgency.ShouldHave );
+        BugReport lowNiceToHave = new BugReport( "Low bug", "Eh.", Severity.Small, Urgency.NiceToHave );
+        BugReport lowNull = new BugReport( "Low bug", "Eh.", Severity.Small, null );
         
         BugReport nullFixNow = new BugReport( "Low bug", "Eh.", null, Urgency.fixImmediately );
         BugReport nullMustHave = new BugReport( "Low bug", "Eh.", null, Urgency.MustHave );
@@ -268,11 +268,11 @@ public class ComparatorTest
         BugReport mediumNiceToHave = new BugReport( "Medium bug", "Oh bother.", Severity.Medium, Urgency.NiceToHave );
         BugReport mediumNull = new BugReport( "Medium bug", "Oh bother.", Severity.Medium, null );
         
-        BugReport lowFixNow = new BugReport( "Low bug", "Eh.", Severity.Low, Urgency.fixImmediately );
-        BugReport lowMustHave = new BugReport( "Low bug", "Eh.", Severity.Low, Urgency.MustHave );
-        BugReport lowShouldHave = new BugReport( "Low bug", "Eh.", Severity.Low, Urgency.ShouldHave );
-        BugReport lowNiceToHave = new BugReport( "Low bug", "Eh.", Severity.Low, Urgency.NiceToHave );
-        BugReport lowNull = new BugReport( "Low bug", "Eh.", Severity.Low, null );
+        BugReport lowFixNow = new BugReport( "Low bug", "Eh.", Severity.Small, Urgency.fixImmediately );
+        BugReport lowMustHave = new BugReport( "Low bug", "Eh.", Severity.Small, Urgency.MustHave );
+        BugReport lowShouldHave = new BugReport( "Low bug", "Eh.", Severity.Small, Urgency.ShouldHave );
+        BugReport lowNiceToHave = new BugReport( "Low bug", "Eh.", Severity.Small, Urgency.NiceToHave );
+        BugReport lowNull = new BugReport( "Low bug", "Eh.", Severity.Small, null );
         
         BugReport nullFixNow = new BugReport( "Low bug", "Eh.", null, Urgency.fixImmediately );
         BugReport nullMustHave = new BugReport( "Low bug", "Eh.", null, Urgency.MustHave );
