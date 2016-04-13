@@ -49,28 +49,3 @@ mvn clean install
 This will build some utilities needed by the unit tests. After that, we'll have 
 you open up some of the subprojects in an IDE (or not, it's up to you), and let 
 you work through them. 
-
-## Junior Developer Questions ##
-
-The interview for a Junior Developer position includes the following projects:
-
-* **Junior Developer 01 - Hello, World** - Write a "Hello, World!" and "Hello, ${name}!" method.
-* **Junior Developer 02 - FizzBuzz** - Solve the classic FizzBuzz problem.
-* **Junior Developer 03 - Sort** - Sort an array of integers, using whatever algorithm they like.
-* **Junior Developer 04 - Array Merge** - Merge two arrays, alternating elements from each.
-* **Junior Developer 05 - Clever Array Merge** - Same as Array Merge, but the arrays might be of differing lengths.
-* **Junior Developer 06 - Fibonacci** - Write a function that returns the first 100 Fibonacci numbers.
-* **Junior Developer 07 - Sums** - Write three methods that sum the numbers in an array, using a for-loop, a while-loop, and recursion.
-* **Junior Developer 08 - String Reverse** - Reverse a String.
-* **Junior Developer 09 - Factorial** - Write a method that calculates the factorial of an integer.
-* **Junior Developer 10 - Find Primes** - Write a method that finds the first 100 prime numbers.
-
-## Developer Questions ##
-
-The interview for a Developer position includes the following projects:
-
-* **Developer 01 - Array List** - Write `add` and `delete` methods for an Array List.
-* **Developer 02 - Linked List** - Write `add` and `delete` methods for a Linked List.
-* **Developer 03 - Comparator** - Write an implementation of a java.util.Comparator, using provided criteria
-* **Developer 04 - Prime Sieve** -Implement the Sieve of Eratosthenes to find prime numbers
-* **Developer 05 - Quick Sort** -Implement the QuickSort algorithm
