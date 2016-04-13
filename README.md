@@ -1,9 +1,11 @@
-# InterviewQuestions #
+# Java Interview Questions #
 
 This project is designed to test your skills as a back-end Java developer,
 using the same tools and technologies our team employs on a daily basis.
 
-This project contains a number of unit-tested challenges designed to make sure you have at least a basic familiarity with Java and the ability to solve general proramming problems.
+This project contains a number of unit-tested challenges designed to make sure 
+you have at least a basic familiarity with Java and the ability to solve general 
+proramming problems.
 
 ## Necessary Tools ##
 
@@ -44,7 +46,9 @@ cd JavaChallenge
 mvn clean install 
 ```
 
-This will build some utilities needed by the unit tests. After that, we'll have you open up some of the subprojects in an IDE (or not, it's up to you), and let you work through them. 
+This will build some utilities needed by the unit tests. After that, we'll have 
+you open up some of the subprojects in an IDE (or not, it's up to you), and let 
+you work through them. 
 
 ## Junior Developer Questions ##
 
