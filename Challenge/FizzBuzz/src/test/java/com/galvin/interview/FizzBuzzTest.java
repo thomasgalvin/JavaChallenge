@@ -6,8 +6,6 @@ import org.junit.Test;
 
 public class FizzBuzzTest
 {
-    public static final String UNEXPECTED_CONSOLE_OUTPUT = "Unexpected console output";
-    
     @Test
     public void testFizzBuzz() throws Exception {
         ConsoleGrabber.grabConsole();
@@ -21,9 +19,11 @@ public class FizzBuzzTest
         String[] resultTokens = result.split( "\n" );
         String[] expectedTokens = expected.split( "\n" );
         
-        Assert.assertEquals( UNEXPECTED_CONSOLE_OUTPUT, expectedTokens.length, resultTokens.length );
+        Assert.assertEquals( "Unexpected number of lines", expectedTokens.length, resultTokens.length );
+        
         for( int i = 0; i < resultTokens.length; i++ ){
-            Assert.assertEquals( UNEXPECTED_CONSOLE_OUTPUT, expectedTokens[i].trim(), resultTokens[i].trim() );
+            String errorMessage = "Line " + (i+1) + " error: ";
+            Assert.assertEquals( errorMessage, expectedTokens[i].trim(), resultTokens[i].trim() );
         }
     }
     
