@@ -34,8 +34,8 @@ public class SumsTest
         double expected = getSum( input );
         
         Assert.assertEquals( INCORRECT_SUM_FOR, expected, forResult, errorMargin );
-        Assert.assertEquals( INCORRECT_SUM_WHILE, expected, whileResult, whileResult );
-        Assert.assertEquals( INCORRECT_SUM_RECURSION, expected, recursiveResult, recursiveResult );
+        Assert.assertEquals( INCORRECT_SUM_WHILE, expected, whileResult, errorMargin );
+        Assert.assertEquals( INCORRECT_SUM_RECURSION, expected, recursiveResult, errorMargin );
     }
     
     private double getSum( double[] input ){
