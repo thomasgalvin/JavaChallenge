@@ -11,7 +11,7 @@ public class SumsTest
     public static final double errorMargin = 0;
     
     @Test
-    public void testArrayMerge() throws Exception{
+    public void testSums() throws Exception{
         Sums sums = new Sums();
         
         double[] input = new double[]{ 1,2,3,4,5 };
@@ -34,8 +34,8 @@ public class SumsTest
         double expected = getSum( input );
         
         Assert.assertEquals( INCORRECT_SUM_FOR, expected, forResult, errorMargin );
-        Assert.assertEquals( INCORRECT_SUM_WHILE, expected, forResult, whileResult );
-        Assert.assertEquals( INCORRECT_SUM_RECURSION, expected, forResult, recursiveResult );
+        Assert.assertEquals( INCORRECT_SUM_WHILE, expected, whileResult, whileResult );
+        Assert.assertEquals( INCORRECT_SUM_RECURSION, expected, recursiveResult, recursiveResult );
     }
     
     private double getSum( double[] input ){
