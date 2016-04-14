@@ -9,7 +9,8 @@ package com.galvin.interview;
  * 
  * Implement both methods.
  * 
- * You may assume that the input will not be null.
+ * You may assume that the input will not be null, but it might be an 
+ * empty string.
  */
 public class AtoZ
 {

@@ -154,10 +154,12 @@ public class AtoZTest
         
         for( String test : INCORRECT_LEADING_CHAR ) {
             Assert.assertFalse( "Incorrectly matched: " + test, atoz.match( test ) );
+            Assert.assertFalse( "Incorrectly matched: " + test, atoz.matchIgnoreCase( test ) );
         }
         
         for( String test : INCORRECT_LEADING_WHITESPACE ) {
             Assert.assertFalse( "Incorrectly matched: " + test, atoz.match( test ) );
+            Assert.assertFalse( "Incorrectly matched: " + test, atoz.matchIgnoreCase( test ) );
         }
     }
 }
