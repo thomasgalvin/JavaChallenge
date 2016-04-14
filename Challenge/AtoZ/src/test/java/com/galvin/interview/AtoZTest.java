@@ -90,6 +90,7 @@ public class AtoZTest
         " X",
         " Y",
         " Z",
+        "",
     };
     
     public static final String[] INCORRECT_LEADING_CHAR = {
