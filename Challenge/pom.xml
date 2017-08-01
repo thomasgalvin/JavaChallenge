@@ -31,5 +31,6 @@
         <module>HashMap</module>
         <module>PrimeSieve</module>
         <module>QuickSort</module>
+        <module>MergeSort</module>
     </modules>
 </project>
