@@ -57,7 +57,7 @@ public class ComparatorTest
         Assert.assertEquals( "Sort by severity failed", expected, input );
     }
     
-    @Test  void testSeveritySortWithNull() throws Exception {
+    @Test public void testSeveritySortWithNull() throws Exception {
         BugReport worldEnding = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.WorldEnding, Urgency.MustHave );
         BugReport large = new BugReport( "Large bug", "Well this sucks.", Severity.Large, Urgency.MustHave );
         BugReport medium = new BugReport( "Medium bug", "Oh bother.", Severity.Medium, Urgency.MustHave );
