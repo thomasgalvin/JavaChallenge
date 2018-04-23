@@ -137,28 +137,66 @@ public class AtoZTest
         "/ABCDEFG",
         "\u0100",
     };
-    
-    @Test
-    public void testAtoZ() throws Exception {
+
+    @Test public void testAll() throws Exception {
         AtoZ atoz = new AtoZ();
-        
+
         for( String test : CORRECT_UPPERCASE ) {
             Assert.assertTrue( "Failed to match: " + test, atoz.match( test ) );
             Assert.assertTrue( "Failed to match: " + test, atoz.matchIgnoreCase( test ) );
         }
-        
+
         for( String test : CORRECT_LOWERCASE ) {
             Assert.assertFalse( "Incorrectly matched: " + test, atoz.match( test ) );
             Assert.assertTrue( "Failed to match: " + test, atoz.matchIgnoreCase( test ) );
         }
-        
+
         for( String test : INCORRECT_LEADING_CHAR ) {
             Assert.assertFalse( "Incorrectly matched: " + test, atoz.match( test ) );
             Assert.assertFalse( "Incorrectly matched: " + test, atoz.matchIgnoreCase( test ) );
         }
+
+        for( String test : INCORRECT_LEADING_WHITESPACE ) {
+            Assert.assertFalse( "Incorrectly matched: " + test, atoz.match( test ) );
+        }
+    }
+    
+    @Test public void testMatchCase() throws Exception {
+        AtoZ atoz = new AtoZ();
+        
+        for( String test : CORRECT_UPPERCASE ) {
+            Assert.assertTrue( "Failed to match: " + test, atoz.match( test ) );
+        }
+        
+        for( String test : CORRECT_LOWERCASE ) {
+            Assert.assertFalse( "Incorrectly matched: " + test, atoz.match( test ) );
+        }
+        
+        for( String test : INCORRECT_LEADING_CHAR ) {
+            Assert.assertFalse( "Incorrectly matched: " + test, atoz.match( test ) );
+        }
         
         for( String test : INCORRECT_LEADING_WHITESPACE ) {
             Assert.assertFalse( "Incorrectly matched: " + test, atoz.match( test ) );
+        }
+    }
+
+    @Test public void testIgnoreCase() throws Exception{
+        AtoZ atoz = new AtoZ();
+
+        for( String test : CORRECT_UPPERCASE ) {
+            Assert.assertTrue( "Failed to match: " + test, atoz.matchIgnoreCase( test ) );
+        }
+
+        for( String test : CORRECT_LOWERCASE ) {
+            Assert.assertTrue( "Failed to match: " + test, atoz.matchIgnoreCase( test ) );
+        }
+
+        for( String test : INCORRECT_LEADING_CHAR ) {
+            Assert.assertFalse( "Incorrectly matched: " + test, atoz.matchIgnoreCase( test ) );
+        }
+
+        for( String test : INCORRECT_LEADING_WHITESPACE ) {
             Assert.assertFalse( "Incorrectly matched: " + test, atoz.matchIgnoreCase( test ) );
         }
     }

@@ -13,9 +13,23 @@ public class ArrayListTest
         }
     };
     
-    @Test
-    public void testArrayList() throws Exception {
+    @Test public void testAll() throws Exception {
         ListTestHarness harness = new ListTestHarness( factory );
         harness.testAll();
+    }
+
+    @Test public void testAddMethod() throws Exception {
+        ListTestHarness harness = new ListTestHarness( factory );
+        harness.testAddMethod();
+    }
+
+    @Test public void testAddAtMethod() throws Exception {
+        ListTestHarness harness = new ListTestHarness( factory );
+        harness.testAddAtMethod();
+    }
+
+    @Test public void testRemoveMethod() throws Exception {
+        ListTestHarness harness = new ListTestHarness( factory );
+        harness.testRemoveMethod();
     }
 }

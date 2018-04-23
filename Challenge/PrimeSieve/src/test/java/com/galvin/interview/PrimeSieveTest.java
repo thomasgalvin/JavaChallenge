@@ -5,8 +5,7 @@ import org.junit.Test;
 
 public class PrimeSieveTest
 {
-    @Test
-    public void testPrimes() throws Exception{
+    @Test public void testPrimes() throws Exception{
         // use a known-to-work algorithm to find the first N primes.
         // Our stop number will then be one greater than the Nth prime.
         int[] expected = findPrimes( 1000 );

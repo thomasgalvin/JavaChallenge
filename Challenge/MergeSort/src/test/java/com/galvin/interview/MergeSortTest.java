@@ -8,28 +8,24 @@ import org.junit.Test;
 
 public class MergeSortTest
 {
-    @Test
-    public void testMergesortPresorted() throws Exception {
+    @Test public void testMergesortPresorted() throws Exception {
         List<Integer> target = getTestData();
         doMergeSort( target );
     }
     
-    @Test
-    public void testMergesortBackwards() throws Exception {
+    @Test public void testMergesortBackwards() throws Exception {
         List<Integer> target = getTestData();
         Collections.reverse( target );
         doMergeSort( target );
     }
     
-    @Test
-    public void testMergesortShuffle() throws Exception {
+    @Test public void testMergesortShuffle() throws Exception {
         List<Integer> target = getTestData();
         Collections.shuffle( target );
         doMergeSort( target );
     }
     
-    @Test
-    public void testMergesortDuplicates() throws Exception {
+    @Test public void testMergesortDuplicates() throws Exception {
         List<Integer> target = new ArrayList();
         target.addAll( getTestData() );
         target.addAll( getTestData() );
@@ -40,8 +36,7 @@ public class MergeSortTest
         doMergeSort( target );
     }
     
-    @Test
-    public void testMergesortRandom() throws Exception {
+    @Test public void testMergesortRandom() throws Exception {
         for( int i = 0; i < 1000; i++ ){
             doRandomMergeSort();
         }

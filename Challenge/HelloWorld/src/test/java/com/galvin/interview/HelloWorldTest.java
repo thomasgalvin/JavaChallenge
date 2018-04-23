@@ -12,19 +12,22 @@ public class HelloWorldTest
     public static final String HELLO_SALLY = "Hello, Sally!";
     public static final String INPUT_SALLY = "Sally";
     
-    @Test
-    public void testHello() throws Exception {
+    @Test public void testBasic(){
         ConsoleGrabber.grabConsole();
         HelloWorld helloWorld = new HelloWorld();
         helloWorld.sayHello();
-        
+
         String result = ConsoleGrabber.releaseConsole().trim();
         Assert.assertEquals( UNEXPECTED_CONSOLE_OUTPUT, HELLO_WORLD, result );
-        
+    }
+
+    @Test public void testWithParameter(){
+        HelloWorld helloWorld = new HelloWorld();
+
         ConsoleGrabber.grabConsole();
         helloWorld.sayHello( INPUT_SALLY );
-        
-        result = ConsoleGrabber.releaseConsole().trim();
+
+        String result = ConsoleGrabber.releaseConsole().trim();
         Assert.assertEquals( UNEXPECTED_CONSOLE_OUTPUT, HELLO_SALLY, result );
     }
 }

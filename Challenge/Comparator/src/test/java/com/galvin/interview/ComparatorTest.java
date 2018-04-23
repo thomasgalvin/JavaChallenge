@@ -8,8 +8,7 @@ import org.junit.Test;
 
 public class ComparatorTest
 {
-    @Test
-    public void testSeveritySort() throws Exception {
+    @Test public void testSeveritySort() throws Exception {
         BugReport worldEnding = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.WorldEnding, Urgency.MustHave );
         BugReport large = new BugReport( "Large bug", "Well this sucks.", Severity.Large, Urgency.MustHave );
         BugReport medium = new BugReport( "Medium bug", "Oh bother.", Severity.Medium, Urgency.MustHave );
@@ -29,8 +28,7 @@ public class ComparatorTest
         Assert.assertEquals( "Sort by severity failed", expected, input );
     }
     
-    @Test
-    public void testNullSort() throws Exception {
+    @Test public void testNullSort() throws Exception {
         BugReport worldEnding = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.WorldEnding, Urgency.MustHave );
         BugReport large = new BugReport( "Large bug", "Well this sucks.", Severity.Large, Urgency.MustHave );
         BugReport medium = new BugReport( "Medium bug", "Oh bother.", Severity.Medium, Urgency.MustHave );
@@ -59,8 +57,7 @@ public class ComparatorTest
         Assert.assertEquals( "Sort by severity failed", expected, input );
     }
     
-    @Test
-    public void testSeveritySortWithNull() throws Exception {
+    @Test  void testSeveritySortWithNull() throws Exception {
         BugReport worldEnding = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.WorldEnding, Urgency.MustHave );
         BugReport large = new BugReport( "Large bug", "Well this sucks.", Severity.Large, Urgency.MustHave );
         BugReport medium = new BugReport( "Medium bug", "Oh bother.", Severity.Medium, Urgency.MustHave );
@@ -82,8 +79,7 @@ public class ComparatorTest
         Assert.assertEquals( "Sort by severity failed", expected, input );
     }
     
-    @Test
-    public void testUrgencySort() throws Exception {
+    @Test public void testUrgencySort() throws Exception {
         BugReport fixNow = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.Medium, Urgency.fixImmediately );
         BugReport mustHave = new BugReport( "Large bug", "Well this sucks.", Severity.Medium, Urgency.MustHave );
         BugReport shouldHave = new BugReport( "Medium bug", "Oh bother.", Severity.Medium, Urgency.ShouldHave );
@@ -103,8 +99,7 @@ public class ComparatorTest
         Assert.assertEquals( "Sort by severity failed", expected, input );
     }
     
-    @Test
-    public void testUrgencySortWithNull() throws Exception {
+    @Test public void testUrgencySortWithNull() throws Exception {
         BugReport fixNow = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.Medium, Urgency.fixImmediately );
         BugReport mustHave = new BugReport( "Large bug", "Well this sucks.", Severity.Medium, Urgency.MustHave );
         BugReport shouldHave = new BugReport( "Medium bug", "Oh bother.", Severity.Medium, Urgency.ShouldHave );
@@ -126,8 +121,7 @@ public class ComparatorTest
         Assert.assertEquals( "Sort by severity failed", expected, input );
     }
     
-    @Test
-    public void testSeverityAndUrgencySort() throws Exception {
+    @Test public void testSeverityAndUrgencySort() throws Exception {
         BugReport worldEndingFixNow = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.WorldEnding, Urgency.fixImmediately );
         BugReport worldEndingMustHave = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.WorldEnding, Urgency.MustHave );
         BugReport worldEndingShouldHave = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.WorldEnding, Urgency.ShouldHave );
@@ -177,8 +171,7 @@ public class ComparatorTest
         Assert.assertEquals( "Sort by severity failed", expected, input );
     }
     
-    @Test
-    public void testSeverityAndUrgencySortWithNull() throws Exception {
+    @Test public void testSeverityAndUrgencySortWithNull() throws Exception {
         BugReport worldEndingFixNow = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.WorldEnding, Urgency.fixImmediately );
         BugReport worldEndingMustHave = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.WorldEnding, Urgency.MustHave );
         BugReport worldEndingShouldHave = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.WorldEnding, Urgency.ShouldHave );
@@ -248,8 +241,7 @@ public class ComparatorTest
         Assert.assertEquals( "Sort by severity failed", expected, input );
     }
     
-    @Test
-    public void testSeverityAndUrgencyWithDuplicatesSort() throws Exception {
+    @Test public void testSeverityAndUrgencyWithDuplicatesSort() throws Exception {
         BugReport worldEndingFixNow = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.WorldEnding, Urgency.fixImmediately );
         BugReport worldEndingMustHave = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.WorldEnding, Urgency.MustHave );
         BugReport worldEndingShouldHave = new BugReport( "World-Ending bug", "Everything is on fire and I think I'm going to die.", Severity.WorldEnding, Urgency.ShouldHave );

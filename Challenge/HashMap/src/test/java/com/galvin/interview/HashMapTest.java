@@ -7,8 +7,7 @@ import org.junit.Test;
 
 public class HashMapTest
 {
-    @Test
-    public void testHashMap() throws Exception {
+    @Test public void testHashMap() throws Exception {
         HashMap hashMap = new HashMap();
         String[][] entries = {
             { "A", "Alli" },

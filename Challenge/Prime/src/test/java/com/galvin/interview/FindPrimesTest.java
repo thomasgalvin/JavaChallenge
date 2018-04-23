@@ -1,15 +1,14 @@
 package com.galvin.interview;
 
+import static com.galvin.interview.FindPrimes.PRIME_COUNT;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class FindPrimesTest
 {
-    public static final int PRIME_COUNT = 100;
     public static final String ERROR = "Incorrect list of primes";
     
-    @Test
-    public void testArrayMerge() throws Exception{
+    @Test public void testFindPrimes() throws Exception{
         FindPrimes findPrimes = new FindPrimes();
         int[] result = findPrimes.findPrimes();
         int[] expected = findPrimes();

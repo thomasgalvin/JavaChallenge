@@ -62,7 +62,71 @@ public class ListTestHarness
         testFindNullNotFound();
         testFindWithNulls();
     }
-    
+
+    public void testAddMethod() throws Exception{
+        testAdd();
+        testAddMultiple();
+        testSetZero();
+        testSetMiddle();
+        testSetEnd();
+        testSetInvalidIndexPositive();
+        testSetInvalidIndexNegative();
+
+        testClear();
+
+        testGetIndexInvalidEmpty();
+        testGetIndexInvalidNegative();
+        testGetIndexInvalidEnd();
+        testIndexOfNotFound();
+
+        testContainsTrue();
+        testContainsFalse();
+        testSize();
+        testIsEmpty();
+
+
+        testIsEmptyClear();
+        testToArray();
+        testToArrayEmpty();
+        testSublistWhole();
+        testSublistMiddle();
+        testSublistEnd();
+        testSublistNone();
+        testSublistEmpty();
+        testSublistInvalidFromNegative();
+        testSublistInvalidFromPositive();
+        testSublistInvalidToNegative();
+        testSublistInvalidToPositive();
+        testSublistFromLargerThanTo();
+        testFindNullZero();
+        testFindNullMiddle();
+        testFindNullEnd();
+        testFindNullNotFound();
+        testFindWithNulls();
+    }
+
+    public void testAddAtMethod() throws Exception{
+        testAddIndexEmpty();
+        testAddIndexZero();
+        testAddIndexMiddle();
+        testAddIndexEnd();
+        testAddIndexInvalid();
+        testAddIndexInvalidNegative();
+    }
+
+    public void testRemoveMethod() throws Exception{
+        testRemoveZeroIndex();
+        testRemoveMiddleIndex();
+        testRemoveEndIndexAtCapacity();
+        testRemoveEndIndex();
+        testRemoveObjectZero();
+        testRemoveObjectMiddle();
+        testRemoveObjectLast();
+        testRemoveObjectNotPresent();
+
+        testIsEmptyRemove();
+    }
+
     public void testAdd() throws Exception {
         List list = listFactory.createList();
         

@@ -8,28 +8,24 @@ import org.junit.Test;
 
 public class QuickSortTest
 {
-    @Test
-    public void testQuicksortPresorted() throws Exception {
+    @Test public void testQuicksortPresorted() throws Exception {
         List<Integer> target = getTestData();
         doQuickSort( target );
     }
     
-    @Test
-    public void testQuicksortBackwards() throws Exception {
+    @Test public void testQuicksortBackwards() throws Exception {
         List<Integer> target = getTestData();
         Collections.reverse( target );
         doQuickSort( target );
     }
     
-    @Test
-    public void testQuicksortShuffle() throws Exception {
+    @Test public void testQuicksortShuffle() throws Exception {
         List<Integer> target = getTestData();
         Collections.shuffle( target );
         doQuickSort( target );
     }
     
-    @Test
-    public void testQuicksortDuplicates() throws Exception {
+    @Test public void testQuicksortDuplicates() throws Exception {
         List<Integer> target = new ArrayList();
         target.addAll( getTestData() );
         target.addAll( getTestData() );
@@ -40,8 +36,7 @@ public class QuickSortTest
         doQuickSort( target );
     }
     
-    @Test
-    public void testQuicksortRandom() throws Exception {
+    @Test public void testQuicksortRandom() throws Exception {
         for( int i = 0; i < 1000; i++ ){
             doRandomQuickSort();
         }
