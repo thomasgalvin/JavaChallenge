@@ -6,6 +6,8 @@ package com.galvin.interview;
  * a while-loop, and the third uses recursion.
  * 
  * Implement all three methods.
+ *
+ * Hint: It may be easier to add a helper method for your recursion solution.
  */
 public class Sums
 {
