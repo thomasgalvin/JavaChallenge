@@ -1,19 +1,18 @@
 package com.galvin.interview;
 
-import org.junit.Assert;
 import org.junit.Test;
 
 public class AtoZTest
 {
     @Test public void testAll() throws Exception {
-        new TestHarness().testAll();
+        new AZTestHarness().testAll();
     }
     
     @Test public void testMatchCase() throws Exception {
-        new TestHarness().testMatchCase();
+        new AZTestHarness().testMatchCase();
     }
 
     @Test public void testIgnoreCase() throws Exception{
-        new TestHarness().testIgnoreCase();
+        new AZTestHarness().testIgnoreCase();
     }
 }
