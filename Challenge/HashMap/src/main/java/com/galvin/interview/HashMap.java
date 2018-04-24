@@ -31,6 +31,8 @@ package com.galvin.interview;
  *         B. Set the last element in the array to null
  * 
  * Your task is to implement the put(), get(), and remove() methods.
+ *
+ * You may assume that all keys have a unique hash code.
  */
 public class HashMap {
     private static final int DEFAULT_SIZE = 5;
