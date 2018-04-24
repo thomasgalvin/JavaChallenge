@@ -6,7 +6,7 @@
         <artifactId>Challenge</artifactId>
         <version>1.0</version>
     </parent>
-    <artifactId>Fibb</artifactId>
+    <artifactId>FindVowels</artifactId>
     
     <dependencies>
         <dependency>

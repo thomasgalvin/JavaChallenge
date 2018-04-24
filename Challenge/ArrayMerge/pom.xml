@@ -7,7 +7,6 @@
         <version>1.0</version>
     </parent>
     <artifactId>ArrayMerge</artifactId>
-    <name>05 - Array Merge</name>
     
     <dependencies>
         <dependency>

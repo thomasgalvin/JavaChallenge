@@ -15,6 +15,7 @@
         <module>HelloWorld</module>
         <module>AtoZ</module>
         <module>FizzBuzz</module>
+        <module>FindVowels</module>
         <module>Sort</module>
         <module>ArrayMerge</module>
         <module>CleverArrayMerge</module>

@@ -7,7 +7,6 @@
         <version>1.0</version>
     </parent>
     <artifactId>Factorial</artifactId>
-    <name>10 - Factorial</name>
     
     <dependencies>
         <dependency>

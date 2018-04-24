@@ -7,7 +7,6 @@
         <version>1.0</version>
     </parent>
     <artifactId>Comparator</artifactId>
-    <name>15 - Comparator</name>
     
     <dependencies>
         <dependency>

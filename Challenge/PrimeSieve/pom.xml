@@ -7,7 +7,6 @@
         <version>1.0</version>
     </parent>
     <artifactId>PrimeSieve</artifactId>
-    <name>17 - Prime Sieve</name>
     
     <dependencies>
         <dependency>

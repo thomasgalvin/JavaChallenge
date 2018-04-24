@@ -7,7 +7,6 @@
         <version>1.0</version>
     </parent>
     <artifactId>MergeSort</artifactId>
-    <name>19 - MergeSort</name>
     
     <dependencies>
         <dependency>

@@ -7,7 +7,6 @@
         <version>1.0</version>
     </parent>
     <artifactId>Prime</artifactId>
-    <name>11 - Find Primes</name>
     
     <dependencies>
         <dependency>
