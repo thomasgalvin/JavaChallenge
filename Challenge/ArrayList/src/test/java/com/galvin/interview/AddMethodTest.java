@@ -4,7 +4,7 @@ import com.galvin.interview.utils.ListFactory;
 import com.galvin.interview.utils.ListTestHarness;
 import org.junit.Test;
 
-public class TestRemoveMethod {
+public class AddMethodTest {
     private ListFactory factory = new ListFactory() {
         @Override
         public List createList() {
@@ -12,8 +12,8 @@ public class TestRemoveMethod {
         }
     };
 
-    @Test public void testRemoveMethod() throws Exception {
+    @Test public void testAddMethod() throws Exception {
         ListTestHarness harness = new ListTestHarness( factory );
-        harness.testRemoveMethod();
+        harness.testAddMethod();
     }
 }
