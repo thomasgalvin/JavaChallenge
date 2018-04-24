@@ -7,6 +7,7 @@ public class SumsTestHarness
     public static final String INCORRECT_SUM_FOR = "For-loop calculated an incorrect sum";
     public static final String INCORRECT_SUM_WHILE = "While-loop calculated an incorrect sum";
     public static final String INCORRECT_SUM_RECURSION = "Recursion calculated an incorrect sum";
+    public static final String INCORRECT_SUM_STREAMS = "Streams calculated an incorrect sum";
     public static final double errorMargin = 0;
 
     private static final double[] ONE = { 1,2,3,4,5 };
@@ -49,8 +50,8 @@ public class SumsTestHarness
     private void doTestForLoop( double[] input ){
         Sums sums = new Sums();
         double expected = getSum( input );
-        double forResult = sums.forLoopSum( input );
-        Assert.assertEquals( INCORRECT_SUM_FOR, expected, forResult, errorMargin );
+        double result = sums.forLoopSum( input );
+        Assert.assertEquals( INCORRECT_SUM_FOR, expected, result, errorMargin );
     }
 
     public void testWhileLoop(){
@@ -60,8 +61,8 @@ public class SumsTestHarness
     private void doTestWhileLoop( double[] input ){
         Sums sums = new Sums();
         double expected = getSum( input );
-        double forResult = sums.whileLoopSum( input );
-        Assert.assertEquals( INCORRECT_SUM_WHILE, expected, forResult, errorMargin );
+        double result = sums.whileLoopSum( input );
+        Assert.assertEquals( INCORRECT_SUM_WHILE, expected, result, errorMargin );
     }
 
     public void testRecursion(){
@@ -71,8 +72,19 @@ public class SumsTestHarness
     private void doTestRecursion( double[] input ){
         Sums sums = new Sums();
         double expected = getSum( input );
-        double forResult = sums.recursiveSum( input );
-        Assert.assertEquals( INCORRECT_SUM_RECURSION, expected, forResult, errorMargin );
+        double result = sums.recursiveSum( input );
+        Assert.assertEquals( INCORRECT_SUM_RECURSION, expected, result, errorMargin );
+    }
+
+    public void testStreams(){
+        for( double[] data: TEST_DATA ) doTestStreams(data);
+    }
+
+    private void doTestStreams( double[] input ){
+        Sums sums = new Sums();
+        double expected = getSum( input );
+        double result = sums.streamSum( input );
+        Assert.assertEquals( INCORRECT_SUM_STREAMS, expected, result, errorMargin );
     }
 
     private double getSum( double[] input ){

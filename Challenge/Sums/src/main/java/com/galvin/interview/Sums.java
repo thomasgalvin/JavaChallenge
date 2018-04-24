@@ -2,8 +2,9 @@ package com.galvin.interview;
 
 /**
  * This program calculates the sum of the numbers in an array, but provides
- * three different methods of doing so; the first uses a for-loop, the second
- * a while-loop, and the third uses recursion.
+ * four different methods of doing so; the first uses a for-loop, the second
+ * a while-loop, the third uses recursion, and the fourth uses Java's new
+ * Stream API
  * 
  * Implement all three methods.
  *
@@ -21,5 +22,9 @@ public class Sums
     
     public double recursiveSum( double[] numbers ) {
         throw new UnsupportedOperationException( "TODO: Implement me using recursion!" );
+    }
+
+    public double streamSum( double[] numbers ) {
+        throw new UnsupportedOperationException( "TODO: Implement me using streams!" );
     }
 }
