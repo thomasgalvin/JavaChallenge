@@ -1,12 +1,12 @@
 package com.galvin.interview;
 
-import static com.galvin.interview.Fibb.FIBB_COUNT;
 import org.junit.Assert;
 import org.junit.Test;
 
 public class FibbTest
 {
     public static final String FIBONACCI_FAILURE = "Incorrect Fibonacci sequence";
+    public static final int FIBB_COUNT = 100;
     
     @Test public void testFibb() throws Exception{
         Fibb fibb = new Fibb();
