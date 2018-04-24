@@ -5,12 +5,15 @@ package com.galvin.interview;
  * 
  * Your task is to implements the two add() and one remove methods below, 
  * without breaking any of the existing functionality.
+ *
+ * Hint: There are helper methods in this class that will probably be very useful.
  */
 public class LinkedList implements List {
     private Node head = null;
     
     @Override
     public void add( Object target ) {
+
         throw new UnsupportedOperationException( "TODO: Not implemented yet" );
     }
 

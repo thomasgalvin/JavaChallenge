@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
   
     <groupId>galvin.interview</groupId>
-    <artifactId>Interview</artifactId>
+    <artifactId>Challenge</artifactId>
     <version>1.0</version>
     <packaging>pom</packaging>
     <name>Interview Questions Master</name>
