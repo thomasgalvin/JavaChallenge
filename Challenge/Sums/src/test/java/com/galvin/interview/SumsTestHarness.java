@@ -1,9 +1,8 @@
 package com.galvin.interview;
 
 import org.junit.Assert;
-import org.junit.Test;
 
-public class SumsTest
+public class SumsTestHarness
 {
     public static final String INCORRECT_SUM_FOR = "For-loop calculated an incorrect sum";
     public static final String INCORRECT_SUM_WHILE = "While-loop calculated an incorrect sum";
@@ -16,7 +15,7 @@ public class SumsTest
     private static final double[] FOUR = { 1.5, -2.25, 10.95, 6.21 };
     private static final double[][] TEST_DATA = { ONE, TWO, THREE, FOUR };
 
-    @Test public void testAll() throws Exception{
+    public void testAll() throws Exception{
         Sums sums = new Sums();
         
         double[] input = new double[]{ 1,2,3,4,5 };
@@ -43,7 +42,7 @@ public class SumsTest
         Assert.assertEquals( INCORRECT_SUM_RECURSION, expected, recursiveResult, errorMargin );
     }
 
-    @Test public void testForLoop(){
+    public void testForLoop(){
         for( double[] data: TEST_DATA ) doTestForLoop(data);
     }
 
@@ -54,7 +53,7 @@ public class SumsTest
         Assert.assertEquals( INCORRECT_SUM_FOR, expected, forResult, errorMargin );
     }
 
-    @Test public void testWhileLoop(){
+    public void testWhileLoop(){
         for( double[] data: TEST_DATA ) doTestWhileLoop(data);
     }
 
@@ -65,7 +64,7 @@ public class SumsTest
         Assert.assertEquals( INCORRECT_SUM_WHILE, expected, forResult, errorMargin );
     }
 
-    @Test public void testRecursion(){
+    public void testRecursion(){
         for( double[] data: TEST_DATA ) doTestRecursion(data);
     }
 
