@@ -33,10 +33,7 @@ Default locale: en_US, platform encoding: UTF-8
 OS name: "mac os x", version: "10.11.3", arch: "x86_64", family: "mac"
 ```
 
-You'll also need an IDE. We usually use [Netbeans](https://netbeans.org/downloads/),
-but we don't mandate it. [Eclipse](https://eclipse.org/downloads/) is fine if
-you can convince it to read Maven projects, or you could use 
-[IntelliJ](https://www.jetbrains.com/idea/download/), [Sublime](https://www.sublimetext.com/),
+You'll also need an IDE. We usually use [IntelliJ](https://www.jetbrains.com/idea/download/), but we don't mandate it. You can use [Netbeans](https://netbeans.org/downloads/), [Eclipse](https://eclipse.org/downloads/), [Sublime](https://www.sublimetext.com/),
 [Notepad++](https://notepad-plus-plus.org/download/v6.9.1.html), [vim](http://www.vim.org/),
 [emacs](https://www.gnu.org/software/emacs/), or whatever else you like to code in.
 
