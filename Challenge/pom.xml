@@ -25,6 +25,7 @@
         <module>Factorial</module>
         <module>Prime</module>
         <module>Circle</module>
+        <module>Palindrome</module>
         
         <module>ArrayList</module>
         <module>LinkedList</module>
