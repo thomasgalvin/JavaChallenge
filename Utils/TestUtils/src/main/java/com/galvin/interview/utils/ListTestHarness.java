@@ -1048,7 +1048,7 @@ public class ListTestHarness
         }
         
         int index = list.indexOf( null );
-        Assert.assertEquals( "Wrong copy size", 0, index );
+        Assert.assertEquals( "Wrong index for null", 0, index );
     }
     
     public void testFindNullMiddle() throws Exception {
@@ -1066,7 +1066,7 @@ public class ListTestHarness
         }
         
         int index = list.indexOf( null );
-        Assert.assertEquals( "Wrong copy size", 9, index );
+        Assert.assertEquals( "Wrong index for null", 9, index );
     }
     
     public void testFindNullEnd() throws Exception {
@@ -1084,7 +1084,7 @@ public class ListTestHarness
         }
         
         int index = list.indexOf( null );
-        Assert.assertEquals( "Wrong copy size", 26, index );
+        Assert.assertEquals( "Wrong index for null", 26, index );
     }
     
     public void testFindNullNotFound() throws Exception {
@@ -1101,7 +1101,7 @@ public class ListTestHarness
         }
         
         int index = list.indexOf( null );
-        Assert.assertEquals( "Wrong copy size", -1, index );
+        Assert.assertEquals( "Wrong index for null", -1, index );
     }
     
     public void testFindWithNulls() throws Exception {
