@@ -5,7 +5,7 @@ using the same tools and technologies our team employs on a daily basis.
 
 This project contains a number of unit-tested challenges designed to make sure 
 you have at least a basic familiarity with Java and the ability to solve general 
-proramming problems.
+programming problems.
 
 ## Necessary Tools ##
 
